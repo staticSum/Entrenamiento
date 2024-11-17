@@ -42,7 +42,7 @@ label{
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    width: 25%;
+    width: 20%;
 }
 
 .caja-logo a{
@@ -118,7 +118,7 @@ ul li a:hover{
         display: flex;
     }
     .imagen-logo{
-        width: 35%;
+        width: 25%;
     }
     .menu{
         width: 100%;
