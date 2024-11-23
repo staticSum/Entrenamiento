@@ -46,13 +46,13 @@ label{
 }
 
 .caja-logo a{
-    border: solid 1px purple;
+    border: none;
     display: flex;
     align-items: center;
 }
 
 img {
-    border: solid 1px green;
+    border: none;
 }
 
 ul {
@@ -133,3 +133,48 @@ ul li a:hover{
 @media only screen and (min-width:670px) {
     
 }
+
+.wrapper > div {
+    border: 2px solid rgb(233 171 88);
+    border-radius: 5px;
+    background-color: rgb(233 171 88 / 50%);
+    padding: 1em;
+    color: #d9480f;
+  }
+  
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .one {
+    border: 1px dotted gray;
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  .two {
+    border: 1px dotted gray;
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+  }
+  .three {
+    border: 1px dotted gray;
+    grid-column: 1;
+    grid-row: 2 / 5;
+  }
+  .four {
+    border: 1px dotted gray;
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .five {
+    border: 1px dotted gray;
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .six {
+    border: 1px dotted gray;
+    grid-column: 3;
+    grid-row: 4;
+  }
