@@ -186,7 +186,7 @@ ul li{
     width: 100%;
     height: 50px; 
     overflow: hidden; /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
-    background: #BCCE98;
+    background: #e5982c;
 }
         
 #left {
@@ -196,7 +196,7 @@ ul li{
     left: 0; 
     width: 200px;
     overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
-    background: #DAE9BC; 		
+    background: #f4aa42; 		
 }
 
 #right {
@@ -206,7 +206,7 @@ ul li{
     right: 0; 
     width: 200px;
     overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
-    background: #F7FDEB; 		
+    background: #f4aa42; 		
 }
         
 .innertube {
