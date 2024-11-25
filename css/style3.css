@@ -69,7 +69,7 @@ ul li{
     border: 1px dotted gray;
 }
 
-ul li a{
+.menu_header {
     font-size: 20px;
     text-decoration:none;
     font-style: italic;
@@ -80,7 +80,7 @@ ul li a{
     transition: 1s;
 }
 
-ul li a:hover{
+.menu_header:hover {
     color: black;
     transform: scale(1.5);
 }
@@ -148,33 +148,67 @@ ul li a:hover{
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
   }
-  .one {
+.one {
     border: 1px dotted gray;
     grid-column: 1 / 3;
     grid-row: 1;
   }
-  .two {
+.two {
     border: 1px dotted gray;
     grid-column: 2 / 4;
     grid-row: 1 / 3;
   }
-  .three {
+.three {
     border: 1px dotted gray;
     grid-column: 1;
     grid-row: 2 / 5;
   }
-  .four {
+.four {
     border: 1px dotted gray;
     grid-column: 3;
     grid-row: 3;
   }
-  .five {
+.five {
     border: 1px dotted gray;
     grid-column: 2;
     grid-row: 4;
   }
-  .six {
+.six {
     border: 1px dotted gray;
     grid-column: 3;
     grid-row: 4;
   }
+        
+#footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px; 
+    overflow: hidden; /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
+    background: #BCCE98;
+}
+        
+#left {
+    position: absolute; 
+    top: 140px; /* Set this to the height of the header */
+    bottom: 50px; /* Set this to the height of the footer */
+    left: 0; 
+    width: 200px;
+    overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
+    background: #DAE9BC; 		
+}
+
+#right {
+    position: absolute; 
+    top: 140px; /* Set this to the height of the header */
+    bottom: 50px; /* Set this to the height of the footer */
+    right: 0; 
+    width: 200px;
+    overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
+    background: #F7FDEB; 		
+}
+        
+.innertube {
+    margin: 15px; /* Provides padding for the content */
+}
