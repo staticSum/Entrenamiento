@@ -10,7 +10,38 @@
 
 /*HEADER*/
 header {
-    border: 5px solid grey;
+    border: 5px solid purple;
+}
+
+.caja-logo {
+    border: 3px solid yellow;
+}
+
+.contenido-caja-logo {
+    border: 3px solid green;
+    display: flex;
+    justify-content: center;
+}
+
+.imglogo {
+    border: 2px solid blue;
+    
+}
+
+.menu_header {
+    font-size: 20px;
+    text-decoration:none;
+    font-style: italic;
+    font-weight: 600;
+    font-family: 'shadow';
+    color: gray;
+    transition: 1s;
+    text-align: center;
+}
+
+.alineacion_redes{
+    display: flex;
+    justify-content: space-around;
 }
 
 .esconder{
@@ -39,17 +70,9 @@ label{
 
 .imagen-logo {
     border: 2px solid red;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
     width: 20%;
 }
 
-.caja-logo a{
-    border: none;
-    display: flex;
-    align-items: center;
-}
 
 img {
     border: none;
@@ -60,33 +83,19 @@ ul {
     list-style-type: none;
     padding-inline-start: 0;
     height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 ul li{
     border: 1px dotted gray;
 }
 
-.menu_header {
-    font-size: 20px;
-    text-decoration:none;
-    font-style: italic;
-    font-weight: 600;
-    font-family: 'shadow';
-    color: gray;
-    display: inline-block;
-    transition: 1s;
-}
 
 .menu_header:hover {
     color: black;
     transform: scale(1.5);
 }
-/* .klogo{
-    border: 2px solid blue;
-} */
+
+
 .menu {
     border: 2px solid orange;
 }
@@ -113,66 +122,44 @@ ul li{
 }
 
 /* DESKTOP */
-@media only screen and (min-width:700px) {
-    header{
-        display: flex;
-    }
-    .imagen-logo{
-        width: 25%;
-    }
-    .menu{
-        width: 100%;
-    }
-    .menu-opciones{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 100%;
-    }
-}
-@media only screen and (min-width:670px) {
-    
-}
+
         
-#footer {
+/* #footer {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 50px; 
-    overflow: hidden; /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
+    overflow: hidden;
     background: #e5982c;
 }
         
 #left {
     position: absolute; 
-    top: 140px; /* Set this to the height of the header */
-    bottom: 50px; /* Set this to the height of the footer */
+    top: 140px; 
+    bottom: 50px; 
     left: 0; 
     width: 200px;
-    overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
+    overflow: auto;
     background: #f4aa42; 		
 }
 
 #right {
     position: absolute; 
-    top: 140px; /* Set this to the height of the header */
-    bottom: 50px; /* Set this to the height of the footer */
+    top: 140px; 
+    bottom: 50px; 
     right: 0; 
     width: 200px;
-    overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
+    overflow: auto;
     background: #f4aa42; 		
 }
 
 #main {
     position: absolute; 
-    top: 140px; /* Set this to the height of the header */
-    bottom: 50px; /* Set this to the height of the footer */
+    top: 140px; 
+    bottom: 50px; 
     right: 215px; 
     left: 215px; 
-    overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */		
-}
+    overflow: auto; 	
+} */
         
-.innertube {
-    margin: 15px; /* Provides padding for the content */
-}
