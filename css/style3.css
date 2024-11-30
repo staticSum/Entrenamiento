@@ -69,7 +69,7 @@ ul li{
     border: 1px dotted gray;
 }
 
-ul li a{
+.menu_header {
     font-size: 20px;
     text-decoration:none;
     font-style: italic;
@@ -80,7 +80,7 @@ ul li a{
     transition: 1s;
 }
 
-ul li a:hover{
+.menu_header:hover {
     color: black;
     transform: scale(1.5);
 }
@@ -133,48 +133,46 @@ ul li a:hover{
 @media only screen and (min-width:670px) {
     
 }
+        
+#footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px; 
+    overflow: hidden; /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
+    background: #e5982c;
+}
+        
+#left {
+    position: absolute; 
+    top: 140px; /* Set this to the height of the header */
+    bottom: 50px; /* Set this to the height of the footer */
+    left: 0; 
+    width: 200px;
+    overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
+    background: #f4aa42; 		
+}
 
-.wrapper > div {
-    border: 2px solid rgb(233 171 88);
-    border-radius: 5px;
-    background-color: rgb(233 171 88 / 50%);
-    padding: 1em;
-    color: #d9480f;
-  }
-  
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-  }
-  .one {
-    border: 1px dotted gray;
-    grid-column: 1 / 3;
-    grid-row: 1;
-  }
-  .two {
-    border: 1px dotted gray;
-    grid-column: 2 / 4;
-    grid-row: 1 / 3;
-  }
-  .three {
-    border: 1px dotted gray;
-    grid-column: 1;
-    grid-row: 2 / 5;
-  }
-  .four {
-    border: 1px dotted gray;
-    grid-column: 3;
-    grid-row: 3;
-  }
-  .five {
-    border: 1px dotted gray;
-    grid-column: 2;
-    grid-row: 4;
-  }
-  .six {
-    border: 1px dotted gray;
-    grid-column: 3;
-    grid-row: 4;
-  }
+#right {
+    position: absolute; 
+    top: 140px; /* Set this to the height of the header */
+    bottom: 50px; /* Set this to the height of the footer */
+    right: 0; 
+    width: 200px;
+    overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
+    background: #f4aa42; 		
+}
+
+#main {
+    position: absolute; 
+    top: 140px; /* Set this to the height of the header */
+    bottom: 50px; /* Set this to the height of the footer */
+    right: 215px; 
+    left: 215px; 
+    overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */		
+}
+        
+.innertube {
+    margin: 15px; /* Provides padding for the content */
+}
