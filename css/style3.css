@@ -107,16 +107,59 @@ ul li{
 }
 
 
-.fa-facebook{
+.fa-facebook {
     color: #1877f2;
 }
-.fa-instagram{
+.fa-instagram {
     color: #f77737;
 }
-.fa-youtube{
+.fa-youtube {
     color: #ff0000;
 }
-.fa-facebook:hover, .fa-instagram:hover, .fa-youtube:hover{
+.fa-twitter {
+    color: #1da1f2;
+}
+.fa-tiktok {
+    color: #000000;
+}
+.fa-whatsapp {
+    color: #075e54;
+}
+.fa-discord {
+    color: #ed4245;
+}
+.fa-twitch {
+    color: #9146ff;
+}
+.fa-linkedin {
+    color: #e7a33e;
+}
+.fa-slack {
+    color: #6ecadc;
+}
+.fa-figma {
+    color: #7d3f98;
+}
+.fa-spotify {
+    color: #1db954;
+}
+.fa-patreon {
+    color: #f96854;
+}
+
+.fa-facebook:hover, 
+.fa-instagram:hover, 
+.fa-youtube:hover,
+.fa-twitter:hover,
+.fa-tiktok:hover,
+.fa-whatsapp:hover,
+.fa-discord:hover,
+.fa-twitch:hover,
+.fa-linkedin:hover,
+.fa-slack:hover,
+.fa-figma:hover,
+.fa-spotify:hover,
+.fa-patreon:hover {
     transform: scale(2);
     transition: 1s;
 }
