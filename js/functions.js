@@ -1,4 +1,24 @@
-//
+//********************************************** */ TEORIA
+//*** FUNCIONES EXPERESADAS */
+
+/* En una función expresada, defines una función en una variable por lo que la función solo está disponible para hacer llamada despues de haber sido definida
+ Las funciones expresadas son utiles en:
+
+  1.- Callbacks
+  2.- Funciones Anonimas
+  3.- Clausuras (Closures)
+        Son funciones que capturan variables en sus entorno circundante
+        esto puede ser útil para crear funciones que mantienen un estado interno
+  4.- Asignación Dinámica
+        Sirve para que puedas asignar fuciones expresadas a variables en tiempo de 
+        ejecución, lo que te permite cambiar "que funcion se ejecutará en función de las
+        condiciones del programa."
+
+  __________________________
+  
+  ARROW FUNCTION
+        Es una nueva forma de declarar "Funciones Anonimas Expresadas" creadas en el 2015
+  */
 
 // function saludar(name) {
 //     console.log(`Mi nombre es "${name}"`);
@@ -22,7 +42,7 @@
 
 /**
  * 
- * Toda funcion tiene un return implicito aunque no esté escrito.
+ * Toda funcion tiene un RETURN implicito aunque no esté escrito.
  */
 // function ejecutar() {
 //    console.log('Hola mundo');  
@@ -87,21 +107,73 @@
 // console.log(typeof(ejecuta)); // Esto es el return
 
 
-/*** FUNCION ANOIMA AUTOEJECUTABLE */
-/** Función que retona una función autoejecutable */
-let autoEjecutable = () => {
-    console.log('Hola mundo por 1');
+// /*** FUNCION ANOIMA AUTOEJECUTABLE */
+// /** Función que retona una función autoejecutable */
+// let autoEjecutable = () => {
+//     console.log('Hola mundo por 1');
 
-    return (function () {
-        console.log('Hola mundo por 2');
-        return 'Hola mundo por 3';
-    })(); // parentesis necesarios para ejecutar la función interna, puede o no llevar el ;.
-}
+//     return (function () {
+//         console.log('Hola mundo por 2');
+//         return 0; // el tipo de dato es un number, aunque se crea que está implicito (undefined)
+//     })(); // parentesis necesarios para ejecutar la función interna, puede o no llevar el ;.
+// }
 
-let variable = autoEjecutable();
-console.log(variable); // ejecuta la funcion anonima autoejecutable y a su vez muestra el contenido del return
+// let variable = autoEjecutable(); // quitando parentesis no se ejecuta la función por lo tanto es un tipo de dato function,
+// //  si se ejecuta la función el tipo de cambio es el que esté despues del return.
+// console.log(typeof(variable)); // ejecuta la funcion anonima autoejecutable y a su vez muestra el contenido del return
 
 /** Función que retona una función anónima */
 // (() => {
 //     console.log('Hola Mundo'); // Tambien es una función anonima sin necesidad de nombre.
 // })();
+
+// /**** FUNCION EXPRESADA (CLOSURE) */
+// ex.
+// function contador() {
+//     let count = 0;
+//     return function () {
+//         return ++count;
+//     }   
+// }
+
+// let incrementar = contador();
+// console.log(incrementar());
+// console.log(incrementar());
+
+// /**** FUNCION EXPRESADA (ASIGNACION DINÁMICA) */
+//ex.
+// let operacion;
+
+// if (true) {
+//     operacion = function (a, b) {
+//         return a + b;
+//     }
+// } else {
+//     operacion = function (a, b) {
+//         return a * b;
+//     }
+// }
+// console.log(operacion(2,4))
+
+/*** FUNCION FLECHA (Expresadas) */
+// let saludar = () => {
+//     console.log('Nombre 1')
+// }
+// saludar()
+
+// let saludar = () => console.log('Nombre 2')
+// saludar()
+
+// let saludar = (param) => console.log(param)
+// saludar('Nombre 3')
+
+// let saludar = param => console.log(param)
+// saludar('Nombre 4')
+
+// let sumar = (a, b) => {
+//     return a + b
+// }
+// console.log(sumar(1,2))
+
+let sumar = (a, b) => a + b
+console.log(sumar(3,4))
