@@ -89,18 +89,19 @@
 
 /*** FUNCION ANOIMA AUTOEJECUTABLE */
 /** Función que retona una función autoejecutable */
-// let autoEjecutable = () => {
-//     console.log('Hola mundo por 2');
+let autoEjecutable = () => {
+    console.log('Hola mundo por 1');
 
-//     return (function () {
-//         console.log('Hola mundo por 3');
-//         return 'Hola mundo por 4';
-//     })(); // parentesis necesarios para ejecutar la función interna, puede o no llevar el ;.
-// }
+    return (function () {
+        console.log('Hola mundo por 2');
+        return 'Hola mundo por 3';
+    })(); // parentesis necesarios para ejecutar la función interna, puede o no llevar el ;.
+}
 
-// let variable = autoEjecutable();
-// console.log(variable); // ejecuta la funcion anonima autoejecutable y a su vez muestra el contenido del return
+let variable = autoEjecutable();
+console.log(variable); // ejecuta la funcion anonima autoejecutable y a su vez muestra el contenido del return
 
+/** Función que retona una función anónima */
 // (() => {
 //     console.log('Hola Mundo'); // Tambien es una función anonima sin necesidad de nombre.
 // })();
