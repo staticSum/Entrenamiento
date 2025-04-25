@@ -98,6 +98,9 @@
 //     })(); // parentesis necesarios para ejecutar la función interna, puede o no llevar el ;.
 // }
 
+// let variable = autoEjecutable();
+// console.log(variable); // ejecuta la funcion anonima autoejecutable y a su vez muestra el contenido del return
+
 // (() => {
 //     console.log('Hola Mundo'); // Tambien es una función anonima sin necesidad de nombre.
 // })();
