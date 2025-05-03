@@ -202,7 +202,7 @@
 //  */
 // let name = (nombre) => {
 //       console.log(nombre)
-//       //aquí existe un return implicito aunque no lo escriba.
+//       aquí existe un return implicito aunque no lo escriba.
 //       return nombre
 // }
 // let box = name('Bob Esponja') // NO CREAR variables ni almacenar la ejecución de la función.
