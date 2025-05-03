@@ -175,5 +175,67 @@
 // }
 // console.log(sumar(1,2))
 
-let sumar = (a, b) => a + b
-console.log(sumar(3,4))
+// let sumar = (a, b) => a + b
+// console.log(sumar(3,4))
+
+// /** FUNCION QUE RETORNA UN OBJETO (que contiene una funcion en su return) */
+// let crearObjeto = (nombre, edad) => {
+//       return {
+//             nombre, // codigo resumido de nombre: nombre,
+//             edad,   // codigo resumido de edad: edad,
+//             imprimir() {
+//                   return `Mi nombre es: ${nombre} y mi edad es: ${edad}` 
+//             }
+//       }
+// }
+
+// console.log(crearObjeto('Gato',300).imprimir())
+
+// /** IMPRIMIR UN VALOR PRE-DEFINIDO */
+// function saludar(nombre) {
+//       nombre = nombre || 'desconocido' // en caso de no encontrar la primera opción imprime la segunda
+//       console.log(`Hola mi nombre es ${nombre}`)
+// }
+// saludar()
+
+// /*** Esto es una mala práctica, no se debe guardar la ejecución dentro de una variable
+//  */
+// let name = (nombre) => {
+//       console.log(nombre)
+//       //aquí existe un return implicito aunque no lo escriba.
+//       return nombre
+// }
+// let box = name('Bob Esponja') // NO CREAR variables ni almacenar la ejecución de la función.
+// console.log(box)
+
+// /*** RESUMIR UN OBJETO SIENDO EJECUTADO DENTRO DE UNA FUNCIÓN ***/
+// let persona = (nombre, apellido) => ({nombre, apellido})
+// console.log(persona('Nombre001','Apellido001'))
+
+/*** INICIALIZAR PARAMETRO */
+// let saludar = (param = 'visitante') => {
+//  return `Hola ${param}` 
+//  }
+// console.log(saludar())
+
+/*** LAS 4 TIPOS DE FUNCIONES ANONIMAS AUTOEJECUTABLES */
+/** 1.- CLASICA */
+      // (function() {
+      //       console.log("Soy una función anónima autoejecutable CLASICA");
+      // })();
+      
+/** 2.- CROCKFORD */
+      // ((function() {
+      //       console.log("Soy una función anónima autoejecutable CROCKFORD");
+      // })());
+
+/** 3.- UNARIA */
+      // +function() {
+      //       console.log("Soy una función anónima autoejecutable UNARIA");
+      // }();
+
+/** 4.- FACEBOOK */
+      // !function() {
+      //       console.log("Soy una función anónima autoejecutable ESTILO FACEBOOK");
+      // }();
+
